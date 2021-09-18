@@ -1,14 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-  
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-  if (actual === expected) {
-  
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  }
-
-};
+const assertEqual = require('./assertEqual');
 
 //The function should take in a sentence (as a string) and then return a count of each of the letters in that sentence. 
 // I assume we'll need .length to solve, but OF EACH letter.
@@ -39,3 +29,5 @@ const countLetters = function(allLetters) {
 
 
 console.log(countLetters("Lighthouse is pain I can tolerate"))
+
+module.exports = countLetters;
