@@ -9,14 +9,11 @@ const eqObjects = require('./eqObjects');
 const findKey = require('./findKey');
 const findKeyByValue = require('./findKeyByValue');
 const letterPositions = require('./letterPositions');
-const countLetters = require('/countLetters');
-const countOnly = require('/countOnly');
-const map = require('/map');
-const takeUntil = require('/takeUntil');
-const without = require('/without');
-
-
-
+const countLetters = require('./countLetters');
+const countOnly = require('./countOnly');
+const map = require('./map');
+const takeUntil = require('./takeUntil');
+const without = require('./without');
 
 
 module.exports = {

@@ -12,10 +12,6 @@ const tail = function(array) {
   return hd;
 };
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-console.log(tail(words));
-assertEqual(words.length,3);
-
 
 module.exports = tail;
 

@@ -1,14 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-  
-    console.log(`❌❌❌ Assertion Failed: ${actual} !== ${expected}`);
-  }
-  if (actual === expected) {
-  
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  }
-
-};
+const assertEqual = require('./assertEqual')
 
 // This function should take in a collection of items and return counts for a specific subset of those items.
 // It won't count everything. 
@@ -18,9 +8,6 @@ const assertEqual = function(actual, expected) {
 const countOnly = function(allItems, itemsToCount) {
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
-
-
-
 // variable for our results
   const results = {}
    // loop statement that loops over all items
@@ -44,23 +31,6 @@ const countOnly = function(allItems, itemsToCount) {
 // returns our results
 }
 
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
 
-const result1 = countOnly(firstNames, {"Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-// the truthy falsey value of undefined is false, so making "Agouhanna false makes result1["Aguouhanna"], undefined pass the assertion test.
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
 
 module.exports = countOnly;

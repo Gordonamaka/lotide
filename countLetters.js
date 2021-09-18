@@ -22,12 +22,6 @@ const countLetters = function(allLetters) {
 
 //present lettersKey as an object key 
 
-
-// 
-
 // create a count variable (lt) to be returned upon counting strings
-
-
-console.log(countLetters("Lighthouse is pain I can tolerate"))
 
 module.exports = countLetters;
